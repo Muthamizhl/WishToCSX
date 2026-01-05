@@ -1,0 +1,39 @@
+.app-container {
+  width: 100%;
+  position: relative;
+  background: var(--bg-deep);
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  position: relative;
+}
+
+/* Global Transition Effects */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll adjustments */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold-primary) transparent;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+}
