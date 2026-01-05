@@ -4,6 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+import catherineImage from '../assets/catherine_loyalty.jpg';
+
 const LoyaltySection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const mediaRef = useRef<HTMLDivElement>(null);
@@ -34,7 +36,7 @@ const LoyaltySection = () => {
         <div className="devotion-media" ref={mediaRef}>
           <div className="portrait-frame">
             <img
-              src="/src/assets/catherine_loyalty.jpg"
+              src={catherineImage}
               className="devotion-image"
               alt="Sacred Loyalty"
             />

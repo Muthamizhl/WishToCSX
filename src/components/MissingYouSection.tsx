@@ -4,6 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+import catherineMissingImage from '../assets/catherine_missing.png';
+
 const MissingYouSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const mediaRef = useRef<HTMLDivElement>(null);
@@ -42,7 +44,7 @@ const MissingYouSection = () => {
           <div className="missing-media" ref={mediaRef}>
             <div className="portrait-frame">
               <img
-                src="/src/assets/catherine_missing.png"
+                src={catherineMissingImage}
                 alt="Sacred Remembrance"
                 className="portrait-img"
               />
