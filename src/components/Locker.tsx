@@ -28,7 +28,7 @@ const Locker = ({ onUnlock }: LockerProps) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const key = passcode.toLowerCase().trim();
-    if (key === 'einestin') {
+    if (key === 'einstein') {
       setShowCelebration(true);
     } else {
       setError(true);
@@ -61,7 +61,7 @@ const Locker = ({ onUnlock }: LockerProps) => {
           <p className="description">
             “The star led them to the light, and love leads me to you.”
             <br />
-            <span className="hint">The word is 'EINESTIN'.</span>
+            <span className="hint">The word is 'EINSTEIN'.</span>
           </p>
 
           <form onSubmit={handleSubmit} className="entry-form">
